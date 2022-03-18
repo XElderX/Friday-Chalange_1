@@ -9,25 +9,3 @@ body {
 html {
     font-family: 'Montserrat', sans-serif;
 }
-nav:hover {
-    width: 206px;
-}
-nav:hover > .nav-content{
-    position:fixed;       
-}
-nav:hover > .line {
-    
-    overflow: visible;
-}
-nav:hover .text {
-    display: contents;
-}
-.home:active,
-.tasks:active,
-.settings:active,
-.games:active {
-    background-color: #AED6F1;
-    filter:saturate(2);
-    border-bottom-left-radius: 35%;
-    border-top-left-radius: 35%;
-}

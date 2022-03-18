@@ -1,7 +1,7 @@
 nav{
    
     width: 100px;
-    height: 906px;
+    height: 100vh;
     background-color: #5DADE2;
     opacity: 0.8;
     border: solid 0.rem black;
@@ -99,8 +99,8 @@ nav{
 footer {
     
     position: absolute;
-    left: 518px;
-    top: 860.02px;
+    left: 80vh;
+    bottom:0;
     font-size: 16px;
     text-align: center;
     color: #5DADE2;

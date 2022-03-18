@@ -1,0 +1,107 @@
+nav{
+   
+    width: 100px;
+    height: 906px;
+    background-color: #5DADE2;
+    opacity: 0.8;
+    border: solid 0.rem black;
+    }
+ .nav-content {
+        max-width: 203px;   
+    }
+
+.main-logo{
+    display: flex;
+    justify-content: center;
+   
+}
+#main-svg {
+   
+    width: 61px;
+    height: 61px;
+    filter: invert(1);
+    margin-top: 52px;
+    margin-bottom: 13px;
+}
+.line {
+    display: flex;
+    overflow: hidden;
+    width:62.24px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.home {
+    display: grid;
+    grid-template-areas: 
+    "i t t";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    padding: 16px 32px 16px 32px;
+    
+}
+.text {
+    display: none;
+    grid-area: t;
+    font-size: 24px;
+
+}
+#home-svg {
+    grid-area: i;
+    width: 25px;
+    height: 25px;
+}
+.tasks {
+    display: grid;
+    grid-template-areas: 
+    "i t t";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    padding: 16px 32px 16px 32px;
+}
+#tasks-svg {
+    grid-area: i;
+    width: 25px;
+    height: 35px;
+}
+.settings {
+    display: grid;
+    grid-template-areas: 
+    "i t t";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    padding: 16px 32px 16px 32px;
+}
+#settings-svg {
+    grid-area: i;
+    width: 25px;
+    height: 25px;
+}
+.games {
+    display: grid;
+    grid-template-areas: 
+    "i t t";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    padding: 16px 32px 16px 32px;
+}
+#games-svg {
+    grid-area: i;
+    width: 25px;
+    height: 25px;
+}
+footer {
+    
+    position: absolute;
+    left: 518px;
+    top: 860.02px;
+    font-size: 16px;
+    text-align: center;
+    color: #5DADE2;
+}

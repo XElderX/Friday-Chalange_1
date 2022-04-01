@@ -5,6 +5,8 @@
     padding:0;
     font-size: 62.5%;
 }
+
+
 nav{  
     width: 100px;
     height: 100vh;
@@ -50,7 +52,7 @@ nav{
     margin-right: auto;
     margin-bottom: 16px;
 }
-.home {
+.home>a {
     display: grid;
     grid-template-areas: 
     "i t t";
@@ -64,13 +66,14 @@ nav{
     display: none;
     grid-area: t;
     font-size: 16px;
+    padding-left:2rem;
 }
 #home {
     grid-area: i;
     width: 25px;
     height: 25px;
 }
-.calandar {                                              
+.calandar>a {                                              
     display: grid;
     grid-template-areas: 
     "i t t";
@@ -84,7 +87,7 @@ nav{
     width: 25px;
     height: 25px;
 }
-.FE {
+.FE>a {
     display: grid;
     grid-template-areas: 
     "i t t";
@@ -98,7 +101,7 @@ nav{
     width: 25px;
     height: 25px;
 }
-.games {
+.games>a {
     display: grid;
     grid-template-areas: 
     "i t t";
@@ -113,6 +116,30 @@ nav{
     height: 25px;
     margin-right: 19px;
 }
+.nav-bar {
+    display:flex;
+}
+a {
+    text-decoration: none;
+    color: var(--defaultColor);
+}
+.home:active,
+.calandar:active,
+.FE:active,
+.games:active {
+    background-color: #FFFFFF;
+    filter: brightness(90%);
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    color: var(--BlueDark);
+}
+.home>a:active,
+.calandar>a:active,
+.FE>a:active,
+.games>a:active  {
+    filter: invert(89%) sepia(81%) saturate(7344%) hue-rotate(188deg) brightness(60%) contrast(99%);
+}
+
 footer {  
     position: absolute;
     left: 80vh;
@@ -127,20 +154,4 @@ footer {
 }
 .footer-line >span{
     font-size: 11px;
-}
-.home:active,
-.calandar:active,
-.FE:active,
-.games:active {
-    background-color: #FFFFFF;
-    filter: brightness(90%);
-    border-bottom-left-radius: 35px;
-    border-top-left-radius: 35px;
-    color: var(--BlueDark);
-}
-#home:active,
-#calandar:active,
-#FE:active,
-#games:active  {
-    filter: invert(89%) sepia(81%) saturate(7344%) hue-rotate(188deg) brightness(60%) contrast(99%);
 }

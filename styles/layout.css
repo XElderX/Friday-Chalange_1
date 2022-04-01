@@ -1,38 +1,55 @@
-nav{
-   
+@import "../global.css";
+
+* {
+    margin:0;
+    padding:0;
+    font-size: 62.5%;
+}
+nav{  
     width: 100px;
     height: 100vh;
-    background-color: #5DADE2;
+    background-color: var(--navBg);
     opacity: 0.8;
-    border: solid 0.rem black;
+    border: 0.2rem var(--border) solid;
     }
  .nav-content {
-        max-width: 203px;   
+    max-width: 203px;   
+    }
+    nav:hover {
+        width: 206px;
+    }
+    nav:hover > .nav-content{
+        position:fixed;       
+    }
+    nav:hover > .line {
+        
+        overflow: visible;
+    }
+    nav:hover .text {
+        display: contents;
     }
 
 .main-logo{
     display: flex;
     justify-content: center;
-   
 }
 #main-svg {
-   
     width: 61px;
     height: 61px;
-    filter: invert(1);
+    filter: invert(0);
     margin-top: 52px;
     margin-bottom: 13px;
 }
 .line {
     display: flex;
     overflow: hidden;
-    width:62.24px;
+    width:50%;
     justify-content: center;
+    border-bottom: 2px var(--border) solid;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 16px;
 }
-
 .home {
     display: grid;
     grid-template-areas: 
@@ -46,15 +63,14 @@ nav{
 .text {
     display: none;
     grid-area: t;
-    font-size: 24px;
-
+    font-size: 16px;
 }
-#home-svg {
+#home {
     grid-area: i;
     width: 25px;
     height: 25px;
 }
-.tasks {
+.calandar {                                              
     display: grid;
     grid-template-areas: 
     "i t t";
@@ -63,12 +79,12 @@ nav{
     justify-content: center;
     padding: 16px 32px 16px 32px;
 }
-#tasks-svg {
+#calandar {
     grid-area: i;
     width: 25px;
-    height: 35px;
+    height: 25px;
 }
-.settings {
+.FE {
     display: grid;
     grid-template-areas: 
     "i t t";
@@ -77,7 +93,7 @@ nav{
     justify-content: center;
     padding: 16px 32px 16px 32px;
 }
-#settings-svg {
+#FE {
     grid-area: i;
     width: 25px;
     height: 25px;
@@ -88,44 +104,43 @@ nav{
     "i t t";
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 2fr;
-    justify-content: center;
+    justify-content:first baseline;
     padding: 16px 32px 16px 32px;
 }
-#games-svg {
+#games {
     grid-area: i;
-    width: 25px;
+    width: 40px;
     height: 25px;
+    margin-right: 19px;
 }
-footer {
-    
+footer {  
     position: absolute;
     left: 80vh;
-    bottom:0;
+    bottom: 5px;;
     font-size: 16px;
     text-align: center;
-    color: #5DADE2;
+    color: var(--footerline);
 }
-
-nav:hover {
-    width: 206px;
+.footer-line {
+    border-top: 1px solid var(--BlueDark);
+    width: 346.01px;
 }
-nav:hover > .nav-content{
-    position:fixed;       
-}
-nav:hover > .line {
-    
-    overflow: visible;
-}
-nav:hover .text {
-    display: contents;
+.footer-line >span{
+    font-size: 11px;
 }
 .home:active,
-.tasks:active,
-.settings:active,
+.calandar:active,
+.FE:active,
 .games:active {
-    background-color: #AED6F1;
-    filter:saturate(2);
-    border-bottom-left-radius: 35%;
-    border-top-left-radius: 35%;
+    background-color: #FFFFFF;
+    filter: brightness(90%);
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    color: var(--BlueDark);
 }
-
+#home:active,
+#calandar:active,
+#FE:active,
+#games:active  {
+    filter: invert(89%) sepia(81%) saturate(7344%) hue-rotate(188deg) brightness(60%) contrast(99%);
+}

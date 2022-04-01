@@ -1,11 +1,15 @@
-* {
-    margin:0;
-    padding:0;
-    font-size: 62.5%;
-}
+:root {
+    --navBg: #F7F6FF;
+    --border:rgb(90, 88, 88);
+    --footerline: #5DADE2;
+    --BlueDark: #02577A;
+   
+  }
+
 body {
     background-color: #E5E5E5;
 }
 html {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }

@@ -4,10 +4,13 @@
     --footerline: #5DADE2;
     --BlueDark: #02577A;
     --defaultColor:#C4C4C4;
+    --white: #FFFFFF;
   }
 
 body {
     background-color: #E5E5E5;
+    width: 100vw;
+    height: 100vh
 }
 html {
     font-family: 'Montserrat', sans-serif;

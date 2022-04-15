@@ -257,13 +257,10 @@ footer {
 @media screen and (max-width:576px) {
 
    
-
     .header
     {
         display: flex;
         flex-direction:row;
-        
-        
         flex-wrap: wrap;
         width: 85vw;
         height: 50%;
@@ -272,15 +269,12 @@ footer {
     {
         order:2;
         width:90vw;
-        
-     
     }
         
     .greet {
         
         font-size: 5.145vw;
-        width: 285px;
-        
+        width: 285px;    
         height: 80px;
         margin:20px auto 0px 15px; 
         padding-left: 1rem;
@@ -289,16 +283,14 @@ footer {
     .rightTopBox
     {
         order:1;
-        width:90vw;
-        
+        width:90vw;   
     }
     
     .date{
      
         display:flex;
         flex-direction:column;
-        justify-content:center;
-      
+        justify-content:center;  
         font-size: 4.145vw;
         width:95%;
         height: 110px;
@@ -312,8 +304,7 @@ footer {
     }
     #date{
         margin-left:2rem;
-        font-size: 3.5vw;
-        
+        font-size: 3.5vw; 
     }
     
     
@@ -331,16 +322,13 @@ footer {
     .bottom{
         
         height: 20%;
-        
-       
     }
     .quote{
         display:flex;
         justify-content: center;
         align-items:center;
         margin: 1rem 4rem 1.5rem 3rem;
-      
-        
+     
     }
     .quote>h4{
         font-size: 2.787vw;

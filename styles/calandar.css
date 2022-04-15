@@ -1,0 +1,45 @@
+@import "layout.css";
+
+
+.calandar{
+    background-color: #FFFFFF;
+    filter: brightness(90%);
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    color: var(--BlueDark);
+    
+}
+.calandar > a {
+    filter: invert(89%) sepia(81%) saturate(7344%) hue-rotate(188deg) brightness(60%) contrast(99%);
+}
+.content {
+    position: relative;
+    display:flex;
+    flex-direction:row;
+    background-color:blue;
+    width:100vw;
+   
+
+}
+.left {
+    background-color:red;
+    width: 50vw;
+}.right{
+    background-color:greenyellow;
+    width:50vw;
+}
+.bottomBox{
+    background-color:pink;
+    align-self: center;
+}
+.button{
+    font-size:48px;
+    color: var(--white);
+    width:30px;
+    height:60px;
+    padding: 0 15px 0 15px;
+    margin-left: 188px;
+    border: 2px solid var(--BlueDark);
+    border-radius: 30px;
+    background-color:var(--BlueDark);
+}

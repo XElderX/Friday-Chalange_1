@@ -2,10 +2,13 @@ function currentTime() {
     let date = new Date(); 
     let hh = date.getHours();
     let mm = date.getMinutes();
-    let time = hh + ":" + mm;  
+    
   
-     hh = (hh < 10) ? "0" + hh : hh;
-     mm = (mm < 10) ? "0" + mm : mm;
+    (hh < 10) ? hh = "0" + hh
+    : hh = hh;
+    (mm < 10) ? mm = "0" + mm
+    : mm = mm
+    let time = hh + ":" + mm;  
      
      document.getElementById("clock").innerText = time; 
      let t = setTimeout(function(){ currentTime() }, 1000); 
